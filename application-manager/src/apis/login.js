@@ -6,7 +6,6 @@ const loginRequest = async function(mail, pass,navigate){
         email: mail,
         password: pass
     }
-    console.log(data);
     try{
        await axios.post('http://localhost:4000/users/login',data).then((response) =>{
             if(response.status === 200){
@@ -15,11 +14,11 @@ const loginRequest = async function(mail, pass,navigate){
                 return navigate('/');
             }
         }).catch((error) => {
-            Toast("error","Invalid email/password")
+            Toast("error",error.response.data.message);
             console.log(error);
         });
     }catch(error) {
-        console.log(error);
+        Toast("error",error);
     }
     
 }

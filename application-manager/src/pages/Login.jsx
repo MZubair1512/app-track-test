@@ -23,8 +23,7 @@ const Login = () => {
     return (
         <>
         <div className='h-screen w-screen bg-backgroundLogin bg-cover'>
-          
-        <div className="flex font-[Poppins] min-h-full h-full w-full flex-col justify-center px-6 py-12 lg:px-8 text-white bg-[#00000050]">
+        <div className="flex font-[Poppins] min-h-full h-full w-full flex-col justify-center px-6 py-12 lg:px-8 text-white bg-[#00000060]">
           <div className="sm:mx-auto sm:w-full">
             <h1 className="font-['PoppinsBold'] font-extrabold  text-5xl w-full text-center">Application Manager</h1>
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight to-blue-500">Sign in to continue</h2>
@@ -50,7 +49,7 @@ const Login = () => {
           </div>
     
           <div>
-            <button onClick={()=>loginRequest(email,password,navigate)} className="flex w-full justify-center rounded-md bg-[#fff] px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-white-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">Sign in</button>
+            <button id='log-button' onClick={()=>loginRequest(email,password,navigate)} className="flex w-full justify-center rounded-md bg-[#fff] px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-white-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">Sign in</button>
           </div>
           </div>
     
